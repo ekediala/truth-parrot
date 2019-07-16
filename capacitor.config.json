@@ -1,0 +1,7 @@
+{
+  "appId": "disappointment.panda",
+  "appName": "disappointment-panda",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

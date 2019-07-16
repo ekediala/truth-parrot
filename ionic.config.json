@@ -1,5 +1,8 @@
 {
   "name": "disappointment-panda",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }

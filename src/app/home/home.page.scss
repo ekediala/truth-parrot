@@ -1,1 +1,98 @@
+@media only screen and (max-device-width: 768px) {
+    // non pc
+  @media screen and (orientation: landscape) {
+    .parent {
+      background-position: center left;
+    }
+  }
 
+  @media screen and (orientation: portrait) {
+    .parent {
+      background-position: top;
+    }
+  }
+
+  // Tablet specific
+  @media only screen and (min-device-width: 760px) {
+    .button {
+      left: 35vw;
+    }
+  }
+
+  // Phone specific
+  @media only screen and (max-device-width: 480px) {
+    .button {
+      left: 20vw;
+    }
+  }
+  .parent {
+    background-size: cover;
+    background-image: linear-gradient(
+        to right bottom,
+        transparent,
+        rgba(grey, 0.8)
+      ),
+      url(../../assets/img/bg-image.jpeg);
+  }
+
+  .button {
+    top: 50vh;
+    position: relative;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .parent {
+    background-repeat: repeat space;
+    background-position: top;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(rgb(112, 248, 34), 0.3),
+        rgba(green, 0.8)
+      ),
+      url(../../assets/img/bg-image.jpeg);
+    // background-size: cover;
+  }
+
+  .button {
+    top: 50vh;
+    left: 40vw;
+    position: relative;
+  }
+}
+
+.top {
+  margin-bottom: 1rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(orange, 0.8),
+    rgba(red, 0.8)
+  );
+  height: 33vh;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    17% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    17% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
+
+.parent {
+  height: 100vh;
+}
+
+.button {
+  position: relative;
+}
