@@ -1,9 +1,3 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>create truth</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
   <ion-grid fixed>
     <ion-row>
@@ -27,9 +21,15 @@
         <ion-button (click)="submit()">
           Submit
         </ion-button>
-        <ion-button (click)="get()">
-          Get
-        </ion-button>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2"></ion-col>
+      <ion-col size="8">
+        <ion-list>
+          <app-panda-component *ngFor="let truth of truthList" [truth]="truth"></app-panda-component>
+        </ion-list>
       </ion-col>
       <ion-col size="2"></ion-col>
     </ion-row>

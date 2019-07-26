@@ -1,0 +1,30 @@
+<ion-grid fixed>
+  <ion-row *ngIf="show">
+    <ion-col size="2"></ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-input
+          [(ngModel)]="author"
+          required
+          type="text"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-textarea
+          required
+          [(ngModel)]="truth"
+        ></ion-textarea>
+      </ion-item>
+      <ion-button (click)="update()">
+        Submit
+      </ion-button>
+    </ion-col>
+    <ion-col size="2"></ion-col>
+  </ion-row>
+  <ion-row *ngIf="!show">
+    <ion-col size="12">
+      <h3>{{ truth.author }}</h3>
+      <p>{{ truth.truth }}</p>
+    </ion-col>
+  </ion-row>
+</ion-grid>

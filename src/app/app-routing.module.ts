@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'create', redirectTo: 'create-truth', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'create-truth', loadChildren: './create-truth/create-truth.module#CreateTruthPageModule' },
+  { path: 'panda/:id', loadChildren: './panda/panda.module#PandaPageModule' },
 ];
 
 @NgModule({

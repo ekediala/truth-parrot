@@ -1,5 +1,6 @@
-export class Truth {
+export interface Truth {
     author: string;
     truth: string;
     seen: boolean;
+    id: any;
 }
