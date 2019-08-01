@@ -18,7 +18,7 @@ npx cap add android (for android)
 npx cap add ios (for ios)
 npx cap add electron (for desktop)
 
-#using cordova
+# using cordova
 
 ionic cordova prepare android(for android)
 ionic cordova prepare ios (for ios)
