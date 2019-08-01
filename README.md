@@ -1,0 +1,2 @@
+# disappointment-panda
+"Disappointment Panda would be the hero that none of us would want but all of us would need. He’d be the proverbial vegetables to our mental diet of junk food. He’d make our lives better despite making us feel worse. He’d make us stronger by tearing us down, brighten our future by showing us the darkness. Listening to him would be like watching a movie where the hero dies in the end: you love it even more despite making you feel horrible, because it feels real."
