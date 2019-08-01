@@ -26,11 +26,17 @@ ionic cordova prepare ios (for ios)
 # Running the project
 
 ionic serve (web)
+
 ionic cordova run android (cordova android)
+
 ionic cordova run ios (cordova ios)
+
 npx cap copy android (capacitor android)
+
 npx cap open android (opens capacitor project in Android studio)
+
 npx cap copy ios (capacitor ios)
+
 npx cap open ios (opens capacitor project in Android studio)
 
 All to be run from the command line.
