@@ -3,6 +3,8 @@
 
 *~
 *.sw[mnpcod]
+/firebase
+firebase.json
 *.log
 *.tmp
 *.tmp.*
@@ -11,7 +13,7 @@ log.txt
 *.sublime-workspace
 .vscode/
 npm-debug.log*
-
+/android
 .idea/
 .ionic/
 .sourcemaps/
