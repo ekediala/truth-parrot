@@ -15,17 +15,32 @@ import { SQLite } from '@ionic-native/sqlite/ngx';
 import { HttpClientModule } from '@angular/common/http';
 import { PandaComponent } from './panda-component/panda-component.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+import { firebaseConfig } from './firebase';
+
 @NgModule({
   declarations: [AppComponent, PandaComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule.enablePersistence(),
+    AngularFireAuthModule,
+  ],
   providers: [
     StatusBar,
     TextToSpeech,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    SQLite, SQLitePorter
+    SQLite,
+    SQLitePorter,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

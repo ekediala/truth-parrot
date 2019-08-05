@@ -5,6 +5,7 @@
 *.sw[mnpcod]
 /firebase
 firebase.json
+firebase.js
 *.log
 *.tmp
 *.tmp.*

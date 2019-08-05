@@ -1,4 +1,4 @@
-import { TruthService } from './../service.service';
+import { FirestoreService } from './../firestore.service';
 import { Truth } from './../truth';
 import { Component, Input } from '@angular/core';
 
@@ -9,26 +9,10 @@ import { Component, Input } from '@angular/core';
 })
 export class PandaComponent {
   @Input() truth: Truth;
-  constructor(private DBService: TruthService) {}
+  constructor(private fireService: FirestoreService) {}
   deleteTruth() {
     if (confirm('This is an irreversible action')) {
-      if (window.cordova) {
-        this.DBService.getDbState().subscribe(ready => {
-          if (ready) {
-            this.DBService.deleteTruth(this.truth)
-              .then(() => {
-                alert('Deleted.');
-                return true;
-              })
-              .catch(err => {
-                console.log(`Error: ${err}`);
-                return false;
-              });
-          }
-        });
-      } else {
-        // delete from firestore
-      }
+      this.fireService.remove(this.truth);
     }
   }
 }

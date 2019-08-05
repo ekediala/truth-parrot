@@ -1,5 +1,5 @@
 @media only screen and (max-device-width: 768px) {
-    // non pc
+  // non pc
   @media screen and (orientation: landscape) {
     .parent {
       background-position: center left;
@@ -25,15 +25,15 @@
       left: 20vw;
     }
   }
-  .parent {
-    background-size: cover;
-    background-image: linear-gradient(
-        to right bottom,
-        transparent,
-        rgba(grey, 0.8)
-      ),
-      url(../../assets/img/bg-image.jpeg);
-  }
+  // .parent {
+  //   background-size: cover;
+  //   background-image: linear-gradient(
+  //       to right bottom,
+  //       transparent,
+  //       rgba(grey, 0.8)
+  //     ),
+  //     url(../../assets/img/bg-image.jpeg);
+  // }
 
   .button {
     top: 50vh;
@@ -42,17 +42,17 @@
 }
 
 @media only screen and (min-device-width: 1024px) {
-  .parent {
-    background-repeat: repeat space;
-    background-position: top;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(rgb(112, 248, 34), 0.3),
-        rgba(green, 0.8)
-      ),
-      url(../../assets/img/bg-image.jpeg);
-    // background-size: cover;
-  }
+  // .parent {
+  //   background-repeat: repeat space;
+  //   background-position: top;
+  //   background-image: linear-gradient(
+  //       to right bottom,
+  //       rgba(rgb(112, 248, 34), 0.3),
+  //       rgba(green, 0.8)
+  //     ),
+  //     url(../../assets/img/bg-image.jpeg);
+  //   // background-size: cover;
+  // }
 
   .button {
     top: 50vh;
@@ -61,7 +61,7 @@
   }
 }
 
-.top {
+#truth {
   margin-bottom: 1rem;
   background-image: linear-gradient(
     to right bottom,
@@ -93,6 +93,8 @@
   height: 100vh;
 }
 
-.button {
-  position: relative;
+#parrot {
+  height: 50vh;
+  clear: both;
+  text-align: center
 }
